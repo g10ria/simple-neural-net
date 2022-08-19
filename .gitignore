@@ -1,0 +1,8 @@
+*.exe
+*.zip
+*.o
+.vscode
+*.java
+*.classgit 
+weightsdump.txt
+hands/

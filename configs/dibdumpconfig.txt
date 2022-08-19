@@ -1,0 +1,33 @@
+num_input_nodes            3136
+num_hidden_layers          2
+num_output_nodes           5
+
+hidden_layer_1_size        100
+hidden_layer_2_size        100
+
+trainNetwork               n
+print_network_specifics    Y
+print_debug_messages       Y
+
+use_bitmap                 n
+original_bitmap_file       ./bitmaps/originalreducedsize.bmp
+output_bitmap_file         ./bitmaps/outputreducedsize.bmp
+
+training_sets_file         ./inputs/bitmapinputs.txt 
+where_to_dump_outputs      ./inputs/bitmapoutput.txt
+randomize_weights          Y
+random_weights_lower       -0.5
+random_weights_upper       0.5
+preset_weights_file        ./weights/weights.txt
+where_to_dump_weights      ./weights/weightsdump.txt
+dump_every_x_iterations    100000
+
+initial_learning_factor    0.1
+learning_factor_scaler     1.0
+min_learning_factor        0.001
+max_learning_factor        5.0
+enable_weight_rollback     n
+
+max_training_iterations    40000
+initial_error              1.0
+target_training_error      0.01
